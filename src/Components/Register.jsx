@@ -78,7 +78,7 @@ function Register() {
   };
 
   if (formSubmitted) {
-    navigate("/home?name=" + encodeURIComponent(formData.name));
+    navigate("/?name=" + encodeURIComponent(formData.name));
   }
 
   return (
