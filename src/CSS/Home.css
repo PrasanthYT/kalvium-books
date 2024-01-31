@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.books{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+    place-items: center;
+    margin-left: 40px;
+}
+
+.book{
+    width: 250px;
+    height: 330px;
+    margin: 30px;
+}
+
+.book:hover{
+    transform: scale(1.1);
+}
+
+.align{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.thumb{
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1007px){
+    .books{
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: 40px;
+    }
+}
